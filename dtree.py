@@ -1,7 +1,3 @@
-"""
-Group 22: Qianlong Wen (qxw294), Jianan Zhao (jxz1244)
-First Commit: Sep 18, 2020
-"""
 import argparse
 from utils import *
 from data_loader import *
