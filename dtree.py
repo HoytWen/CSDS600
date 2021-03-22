@@ -138,21 +138,15 @@ def main(args, n_fold=5):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-<<<<<<< HEAD
     data_root = '/Users/wenqianlong/2020_fall_440_22/P1/data'
-=======
     data_root = '/home/zja/PyProject/CSDS440/data'
->>>>>>> 4867eb540a7aa8bf25870ce91c1b6b2ab5d7c32a
     dataset = 'voting'
     dataset = 'volcanoes'
     parser.add_argument('--data_path', type=str, default=f'{data_root}/{dataset}/{dataset}',
                         help='The directory of data')
     parser.add_argument('--cv_flag', type=int, default=0, help='Use cross validation or not (0 or 1)')
-<<<<<<< HEAD
     parser.add_argument('--t_depth', type=int, default=16, help='Depth of the decision tree')
-=======
     parser.add_argument('--t_depth', type=int, default=1, help='Depth of the decision tree')
->>>>>>> d98151910fbb83a8b0aa2d40634ab8949fd0f18b
     parser.add_argument('--gain_method', type=int, default=1,
                         help='If 0, use information gain as the split criterion. If 1, use gain ratio.')
     parser.add_argument('--pre_pruning', type=int, default=0,
