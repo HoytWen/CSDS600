@@ -138,10 +138,8 @@ def main(args, n_fold=5):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    data_root = '/Users/wenqianlong/2020_fall_440_22/P1/data'
-    data_root = '/home/zja/PyProject/CSDS440/data'
+    data_root = '/Users/wenqianlong/CSDS435/data'
     dataset = 'voting'
-    dataset = 'volcanoes'
     parser.add_argument('--data_path', type=str, default=f'{data_root}/{dataset}/{dataset}',
                         help='The directory of data')
     parser.add_argument('--cv_flag', type=int, default=0, help='Use cross validation or not (0 or 1)')
